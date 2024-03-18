@@ -53,8 +53,8 @@ httpd.serve_forever()
 ```
 
 ## OUTPUT:
-https://github.com/charumathiramesh/simplewebserver/blob/main/out1.png
-https://github.com/charumathiramesh/simplewebserver/blob/main/out2.png
+![image](https://github.com/magesh534/simplewebserver/assets/135577936/8e6626a2-520c-4a9d-982d-7be6766aa2be)
+![image](https://github.com/magesh534/simplewebserver/assets/135577936/a9e77421-67fa-4767-b564-3463cf4f3d55)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
