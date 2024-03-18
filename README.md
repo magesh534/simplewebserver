@@ -24,19 +24,48 @@ Testing the webserver.
 
 ```from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
-<!DOCTYPE html>
 <html>
 <head>
-<title>My webserver</title>
+<h1 align="center">SOFTWARE COMPANIES<h1>
+<title>
+TOP SOFTWARE COMPANIES WITH HIGH REVENUES
+</title>
 </head>
-<body>
-<h1><u>Languages used iun Web Development</u><h1>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>Bootstrap</li>
-</body>
+<body bgcolor="cyan">
+<table border="3" align="center">
+<caption>TOP FIVE REVENUE GENERATING SOFTWARE COMPANIES</caption>
+  <tr>
+    <td>SNO</td>
+    <td>Companies</td>
+    <td>Revenue</td>
+  </tr>
+  <tr>
+    <td>1.</td>
+    <td>APPLE</td>
+    <td>$385.70 B</td>
+  </tr>
+<tr>
+    <td>2.</td>
+    <td>Alphabet (Google)</td>
+    <td>$307.39 B</td>
+  </tr>
+<tr>
+    <td>3.</td>
+    <td>Microsoft</td>
+    <td>$227.58 B</td>
+  </tr>
+<tr>
+    <td>4.</td>
+    <td>IBM</td>
+    <td>$61.85 B</td>
+  </tr>
+<tr>
+    <td>5.</td>
+    <td>Oracle</td>
+    <td>$51.62 B </td>
+  </tr>
+</table>
+
 </html>
 """
 class myhandler(BaseHTTPRequestHandler):
@@ -46,15 +75,16 @@ class myhandler(BaseHTTPRequestHandler):
         self.send_header('content-type', 'text/html; charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
-server_address = ('',80)
+server_address = ('',8000)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
 ```
 
 ## OUTPUT:
-![image](https://github.com/magesh534/simplewebserver/assets/135577936/8e6626a2-520c-4a9d-982d-7be6766aa2be)
-![image](https://github.com/magesh534/simplewebserver/assets/135577936/a9e77421-67fa-4767-b564-3463cf4f3d55)
+![image](https://github.com/magesh534/simplewebserver/assets/135577936/f30fe500-ce3f-4566-8ec7-98ddccfe26a4)
+![image](https://github.com/magesh534/simplewebserver/assets/135577936/fc023054-09ca-4a64-941d-adc8dc73cd8b)
+
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
